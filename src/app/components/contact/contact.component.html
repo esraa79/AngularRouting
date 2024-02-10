@@ -14,7 +14,7 @@
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label for="" class="form-label animate__animated"
-                            [ngClass]="setName == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserName}}</label>
+                            [ngClass]="setName == true ? 'd-block animate__fadeInUp' : 'animate__fadeInDown d-none '">{{UserName}}</label>
 
                         <input type="text" formControlName="name" class="form-control" name="" id=""
                             aria-describedby="helpId" placeholder="{{UserName}}" (keyup)="setInputName()" />
@@ -25,7 +25,7 @@
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label for="" class="form-label animate__animated  "
-                            [ngClass]="setAge == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserAge}}</label>
+                            [ngClass]="setAge == true ? 'd-block animate__fadeInUp' : 'animate__fadeInDown d-none '">{{UserAge}}</label>
 
 
 
@@ -38,7 +38,7 @@
                 <div class="col-md-12">
                     <div class="mb-3">
                         <label for="" class="form-label animate__animated  "
-                            [ngClass]="setEmail == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserEmail}}</label>
+                            [ngClass]="setEmail == true ? 'd-block animate__fadeInUp' : 'animate__fadeInDown d-none '">{{UserEmail}}</label>
 
 
 
@@ -50,18 +50,19 @@
 
                 <div class="col-md-12">
                     <div class="mb-3">
+                        
                         <label for="" class="form-label animate__animated   "
-                            [ngClass]="setPsw == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserPsw}}</label>
-
+                            [ngClass]="setPsw == true ? 'd-block animate__fadeInUp' : 'animate__fadeInDown d-none '">{{UserPsw}}</label>
+                 
 
 
                         <input type="password" formControlName="psw" class="form-control" name="" id=""
                             aria-describedby="helpId" placeholder="{{UserPsw}}" (keyup)="setInputPsw()" />
 
-                    </div>
+                        </div>
                 </div>
                 <div class="col-md-12">
-                    <button class="btn mt-4 text-white ">send message</button>
+                    <button class="btn mt-4 text-white text-capitalize ">send message</button>
                 </div>
 
             </div>
