@@ -1,0 +1,27 @@
+
+.port-img img{
+
+    width:400px;
+    /* vertical-align: middle; */
+}
+.layer{
+    background-color: var(--main-color);
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5 all;
+}
+.layer:hover{
+    opacity: 0.9;
+}
+.modal-dialog{
+    top: 15%;
+  /* position: fixed;
+ 
+  left: 10px;
+  bottom: 10px;
+  right: 10px; */
+  
+}
+.modal-content{
+    width:600px;
+}

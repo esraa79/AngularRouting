@@ -1,0 +1,16 @@
+
+.navbar{
+    background-color: var(--second-color) !important;
+    
+}
+.nav-link{
+    text-decoration: none !important;
+    color:var(--font-color)
+}
+.nav-link:hover{
+    color: var(--font-color);
+}
+.active{
+
+    background-color: var(--main-color);
+}

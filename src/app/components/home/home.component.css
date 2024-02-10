@@ -1,0 +1,13 @@
+
+
+.home{
+    background-color: var(--main-color);
+}
+.home-img{
+width:250px;
+height: auto;
+
+}
+.home-img-outer{
+    margin-top: 70px;
+}

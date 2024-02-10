@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+@import '~animate.css/animate.min';
+:root{
+    --main-color:#1abc9c;
+    --second-color:#2c3e50;
+    --font-color :white;
+    --copyright-color :#1a252f;
+
+
+}
+.line{
+    width:80px;
+    height: 4px;
+}
+.line-port{
+    background-color: var(--second-color) !important;
+}
+.title-icon{
+    color: var(--second-color) !important;
+}
+.title{
+    color: var(--second-color);
+}

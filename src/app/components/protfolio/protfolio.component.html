@@ -1,0 +1,33 @@
+<section class="port">
+    <div class=" title text-center my-4">
+        <h2 class="text-uppercase mb-3 fs-1 fw-bolder">Portfolio component</h2>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <div class="line line-port me-3 bg-white"></div>
+            <i class="fa-solid fa-star text-white title-icon"></i>
+            <div class="line line-port ms-3 bg-white"></div>
+        </div>
+    </div>
+    <div class="port-details container mb-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6" *ngFor="let item of imagesPort;let i=index ">
+                <div class="port-img  rounded-2  overflow-hidden w-auto position-relative   ">
+                    <img [src]="item.imgSrc" clas="rounded-3  w-100">
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="showImg(i)"
+                        class="layer  position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center  ">
+                        <i class="fa fa-solid fa-plus fa-6x"></i>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <img [src]="imgSelected" class="img-selected w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>

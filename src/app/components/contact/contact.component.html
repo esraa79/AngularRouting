@@ -1,0 +1,74 @@
+<section>
+    <div class="title text-center my-4">
+        <h2 class="text-uppercase mb-3 fs-1 fw-bolder">contact component</h2>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <div class="line line-port me-3 bg-white"></div>
+            <i class="fa-solid fa-star text-white title-icon"></i>
+            <div class="line line-port ms-3 bg-white"></div>
+        </div>
+    </div>
+
+    <div class="contact-details container d-flex justify-content-center align-content-center m-5">
+        <form [formGroup]="contactForm" class="w-50 mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="" class="form-label animate__animated"
+                            [ngClass]="setName == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserName}}</label>
+
+                        <input type="text" formControlName="name" class="form-control" name="" id=""
+                            aria-describedby="helpId" placeholder="{{UserName}}" (keyup)="setInputName()" />
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="" class="form-label animate__animated  "
+                            [ngClass]="setAge == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserAge}}</label>
+
+
+
+                        <input type="number" formControlName="age" class="form-control" name="" id=""
+                            aria-describedby="helpId" placeholder="{{UserAge}}" (keyup)="setInputAge()" />
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="" class="form-label animate__animated  "
+                            [ngClass]="setEmail == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserEmail}}</label>
+
+
+
+                        <input type="email" formControlName="email" class="form-control" name="" id=""
+                            aria-describedby="helpId" placeholder="{{UserEmail}}" (keyup)="setInputEmail()" />
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="" class="form-label animate__animated   "
+                            [ngClass]="setPsw == true ? 'd-block animate__slideInUp' : 'animate__slideInDown d-none '">{{UserPsw}}</label>
+
+
+
+                        <input type="password" formControlName="psw" class="form-control" name="" id=""
+                            aria-describedby="helpId" placeholder="{{UserPsw}}" (keyup)="setInputPsw()" />
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button class="btn mt-4 text-white ">send message</button>
+                </div>
+
+            </div>
+        </form>
+
+
+
+
+    </div>
+</section>

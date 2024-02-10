@@ -1,0 +1,15 @@
+section{
+    min-height: 100vh;
+}
+.form-label{
+    color: var(--main-color);
+
+}
+.btn{
+    background-color: var(--main-color);
+}
+.btn:hover{
+    background-color: var(--main-color);
+    
+}
+
